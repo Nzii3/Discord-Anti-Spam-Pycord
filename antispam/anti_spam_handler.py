@@ -162,7 +162,7 @@ class AntiSpamHandler:
             self.lib_handler = Nextcord(self)
 
         elif library == Library.PYCORD:
-            from antispam.libs.pycord import Pycord
+            from antispam.libs.dpy_forks.lib_pycord import Pycord
 
             self.lib_handler = Pycord(self)
 
