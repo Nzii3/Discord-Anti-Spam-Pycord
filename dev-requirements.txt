@@ -16,10 +16,3 @@ motor
 dnspython
 redis
 orjson
-
-# Your discord libs here
-hikari
-# discord.py
-nextcord
-disnake
-pincer
