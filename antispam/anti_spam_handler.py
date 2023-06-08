@@ -162,10 +162,9 @@ class AntiSpamHandler:
             self.lib_handler = Nextcord(self)
 
         elif library == Library.PYCORD:
-            raise UnsupportedAction(
-                "Py-cord is no longer officially supported, please see the following url for support:\n"
-                "https://gist.github.com/Skelmis/b15a64f11c2ef89a7c6083ff455774a2"
-            )
+            from antispam.libs.pycord import Pycord
+
+            self.lib_handler = Pycord(self)
 
         elif library == Library.CUSTOM:
             pass
